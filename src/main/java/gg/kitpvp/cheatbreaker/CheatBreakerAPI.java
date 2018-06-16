@@ -45,6 +45,7 @@ public class CheatBreakerAPI extends JavaPlugin {
         this.settings = new SettingsFile(this);
         if(settings.isEnabled()) {
         	getServer().getPluginManager().registerEvents(new PacketListener(this), this);
+		getServer().getPluginManager().registerEvents(new PlayerListener(this), this);
         }
     }
     
