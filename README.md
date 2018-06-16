@@ -5,12 +5,19 @@ issues via the Issue tracker on GitHub, we will aim to fix or add any issues you
 
 ## Installation Instructions ##
 
+To use this library, first add CheatBreakerAPI.jar to your Java build path. Then, add CheatBreakerAPI
+as a dependency or soft dependency to your plugin.yml file like any other plugin:
+
+````yml
+depend: [CheatBreakerAPI]
+````
+
 #### Maven repository 
-    ```xml <dependency>
+    ````xml <dependency>
             <groupId>gg.kitpvp</groupId>
             <artifactId>cheatbreaker</artifactId>
             <version>LATEST</version>
-        </dependency>```
+        </dependency>````
 #### JAR Files
 1. Download the [latest version](https://github.com/MannyFlapjack/CheatBreakerAPI/releases).
 2. Add the JAR to your project.
