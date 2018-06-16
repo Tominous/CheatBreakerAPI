@@ -34,7 +34,7 @@ Coming soon...
 Here is some example usage, the following code will create a scoreboard entry with a countdown of 16 seconds:
 
 ````java
-CheatBreakerAPI.getInstance().onCheatBreaker(player); #Returns true or false
+CheatBreakerAPI.getInstance().onCheatBreaker(player); //Returns true or false
 ````
 
 This is my first public github project so cut me some slack
