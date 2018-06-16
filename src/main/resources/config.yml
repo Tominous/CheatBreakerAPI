@@ -1,0 +1,11 @@
+ENABLED: true
+
+#CheatBreakers Protocol Number
+PROTOCOL_NUMBER: -1332
+
+#Error displayed above the MOTD
+OUTDATED_CLIENT_MESSAGE: "CheatBreaker"
+
+KICK:
+  ON_JOIN: true
+  MESSAGE: "&cYou must connect with CheatBreaker to connect to this server."
