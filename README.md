@@ -5,6 +5,12 @@ issues via the Issue tracker on GitHub, we will aim to fix or add any issues you
 
 <p>I'm planning on introducing a Bungee version for the next version of this plugin. Bungee should be fairly easy to create</p>
 
+### Using CheatBreaker ###
+![alt text](https://i.imgur.com/4ZvX0qi.png)
+
+### Without CheatBreaker ###
+![alt text](https://i.imgur.com/wXiMegs.png)
+
 ## Installation Instructions ##
 
 To use this library, first add CheatBreakerAPI.jar to your Java build path. Then, add CheatBreakerAPI
