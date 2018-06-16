@@ -8,7 +8,7 @@ import org.bukkit.event.player.AsyncPlayerPreLoginEvent;
 import org.bukkit.event.player.PlayerPreLoginEvent.Result;
 import org.bukkit.event.player.PlayerQuitEvent;
 
-public class PlayerListener {
+public class PlayerListener implement Listener {
 
 	private CheatBreakerAPI api;
 	
