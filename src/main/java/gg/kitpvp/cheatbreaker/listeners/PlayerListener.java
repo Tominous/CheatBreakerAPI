@@ -4,11 +4,12 @@ import gg.kitpvp.cheatbreaker.CheatBreakerAPI;
 import net.md_5.bungee.api.ChatColor;
 
 import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerPreLoginEvent;
 import org.bukkit.event.player.PlayerPreLoginEvent.Result;
 import org.bukkit.event.player.PlayerQuitEvent;
 
-public class PlayerListener implement Listener {
+public class PlayerListener implements Listener {
 
 	private CheatBreakerAPI api;
 	
