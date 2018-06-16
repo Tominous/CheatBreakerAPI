@@ -17,7 +17,8 @@ depend: [CheatBreakerAPI]
             <groupId>gg.kitpvp</groupId>
             <artifactId>cheatbreaker</artifactId>
             <version>LATEST</version>
-        </dependency>````
+        </dependency>
+````
        
 #### Gradle repository
 Coming soon...
