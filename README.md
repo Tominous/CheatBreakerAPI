@@ -33,7 +33,7 @@ Coming soon...
  For IntelliJ users, see [here](http://stackoverflow.com/questions/1051640/correct-way-to-add-external-jars-lib-jar-to-an-intellij-idea-project).
 
 ## Usage
-Here is some example usage, the following code will create a scoreboard entry with a countdown of 16 seconds:
+Here is some example usage, the following code will tell you if a player is using CheatBreaker or not.
 
 ````java
 CheatBreakerAPI.getInstance().onCheatBreaker(player); //Returns true or false
