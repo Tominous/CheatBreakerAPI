@@ -3,6 +3,8 @@
 software by their development team (CheatBreaker); please do not bug them to fix any issues for you. You are free to submit
 issues via the Issue tracker on GitHub, we will aim to fix or add any issues you come across.</p>
 
+<p>I'm planning on introducing a Bungee version for the next version of this plugin. Bungee should be fairly easy to create</p>
+
 ## Installation Instructions ##
 
 To use this library, first add CheatBreakerAPI.jar to your Java build path. Then, add CheatBreakerAPI
