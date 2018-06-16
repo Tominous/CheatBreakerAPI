@@ -12,12 +12,16 @@ as a dependency or soft dependency to your plugin.yml file like any other plugin
 depend: [CheatBreakerAPI]
 ````
 
-#### Maven repository 
-    ````xml <dependency>
+#### Maven repository
+````xml <dependency>
             <groupId>gg.kitpvp</groupId>
             <artifactId>cheatbreaker</artifactId>
             <version>LATEST</version>
         </dependency>````
+       
+#### Gradle repository
+Coming soon...
+
 #### JAR Files
 1. Download the [latest version](https://github.com/MannyFlapjack/CheatBreakerAPI/releases).
 2. Add the JAR to your project.
