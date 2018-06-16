@@ -5,8 +5,12 @@ issues via the Issue tracker on GitHub, we will aim to fix or add any issues you
 
 ## Installation Instructions ##
 
-#### Option 1: Maven repository 
-    
+#### Maven repository 
+    ```xml <dependency>
+            <groupId>gg.kitpvp</groupId>
+            <artifactId>cheatbreaker</artifactId>
+            <version>LATEST</version>
+        </dependency>```
 #### JAR Files
 1. Download the [latest version](https://github.com/MannyFlapjack/CheatBreakerAPI/releases).
 2. Add the JAR to your project.
