@@ -29,7 +29,6 @@ public class PacketListener implements Listener {
 	            
 					if (event.getPacketType() == PacketType.Handshake.Client.SET_PROTOCOL) {
 						if (packet.getProtocols().read(0) == Protocol.LOGIN) {
-	                    	System.out.println(packet.getIntegers().read(0) + " <--");
 	                    	api.getVersions().put(event.getPlayer().getAddress(), packet.getIntegers().read(0));
 	                    }
 	                } else {
