@@ -13,11 +13,12 @@ depend: [CheatBreakerAPI]
 ````
 
 #### Maven repository
-````xml <dependency>
-            <groupId>gg.kitpvp</groupId>
-            <artifactId>cheatbreaker</artifactId>
-            <version>LATEST</version>
-        </dependency>
+````xml 
+<dependency>
+   <groupId>gg.kitpvp</groupId>
+   <artifactId>cheatbreaker</artifactId>
+   <version>LATEST</version>
+</dependency>
 ````
        
 #### Gradle repository
