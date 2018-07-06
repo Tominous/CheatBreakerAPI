@@ -3,7 +3,12 @@
 software by their development team (CheatBreaker); please do not bug them to fix any issues for you. You are free to submit
 issues via the Issue tracker on GitHub, we will aim to fix or add any issues you come across.</p>
 
-<p>I'm planning on introducing a Bungee version for the next version of this plugin. Bungee should be fairly easy to create</p>
+<p>Bungee support and PluginMessagingChannels support has been added.</p>
+<p>Tested Versions:
+   BUNGEE: 1.7 - LATEST
+   PluginMessagingChannels: 1.7 - LATEST
+   Packets (ProtocolLib): 1.8 (kinda broken)
+   </p>
 
 ### Using CheatBreaker ###
 ![alt text](https://i.imgur.com/4ZvX0qi.png)
