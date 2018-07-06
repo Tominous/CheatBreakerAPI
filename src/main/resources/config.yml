@@ -1,4 +1,5 @@
 ENABLED: true
+CHANNELS: true //Kinda bad to use as it takes up to 60s to verify that they are on CB but good for Spigot APIs -- This disables kick on join and such.
 
 #CheatBreakers Protocol Number
 PROTOCOL_NUMBER: -1332
@@ -7,5 +8,5 @@ PROTOCOL_NUMBER: -1332
 OUTDATED_CLIENT_MESSAGE: "CheatBreaker"
 
 KICK:
-  ON_JOIN: true
+  ON_JOIN: false
   MESSAGE: "&cYou must connect with CheatBreaker to connect to this server."

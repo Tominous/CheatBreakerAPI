@@ -11,6 +11,7 @@ public class SettingsFile {
 	private CheatBreakerAPI api;
 	
 	private boolean enabled;
+	private boolean channels;
 	
 	private int protocolNumber;
 	private String outdatedClientMessage;
@@ -29,6 +30,7 @@ public class SettingsFile {
 		FileConfiguration config = api.getConfig();
 		this.enabled = config.getBoolean("ENABLED");
 		this.protocolNumber = config.getInt("PROTOCOL_NUMBER");
+		this.channels = config.getBoolean("CHANNELS");
 		this.outdatedClientMessage = config.getString("OUTDATED_CLIENT_MESSAGE");
 		this.kickOnJoin = config.getBoolean("KICK.ON_JOIN");
 		this.kickMessage = config.getString("KICK.MESSAGE");	

@@ -3,3 +3,4 @@ version: ${version}
 main: gg.kitpvp.cheatbreaker.CheatBreakerAPI
 author: Manny
 commands:
+  debug:

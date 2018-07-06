@@ -1,0 +1,5 @@
+name: ${name}
+version: ${version}
+main: gg.kitpvp.cheatbreaker.bungee.CheatBreakerAPI
+author: Manny
+commands:

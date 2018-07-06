@@ -19,8 +19,8 @@ public class PlayerListener implements Listener {
 	
 	@EventHandler
 	public void onJoin(AsyncPlayerPreLoginEvent event) {
-		if (api.getSettings().isKickOnJoin()) {
-			if (api.getVersions().containsKey(event.getAddress()) && api.getVersions().get(event.getAddress()) != api.getSettings().getProtocolNumber()) {
+		if(api.getSettings().isKickOnJoin()) {
+			if(api.getVersions().containsKey(event.getAddress()) && api.getVersions().get(event.getAddress()) != api.getSettings().getProtocolNumber()) {
 				event.setResult(Result.KICK_OTHER);
 				event.setKickMessage(ChatColor.translateAlternateColorCodes('&', api.getSettings().getKickMessage()));
 			}
@@ -29,6 +29,8 @@ public class PlayerListener implements Listener {
 	
 	@EventHandler
 	public void onQuit(PlayerQuitEvent event) {
-		api.getVersions().remove(event.getPlayer().getAddress());
+		if(api.getVersions().containsKey(event.getPlayer().getAddress())) {
+			api.getVersions().remove(event.getPlayer().getAddress());
+		}
 	}
 }

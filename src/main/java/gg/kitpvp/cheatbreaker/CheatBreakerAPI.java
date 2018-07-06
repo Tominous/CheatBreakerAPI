@@ -1,7 +1,9 @@
 package gg.kitpvp.cheatbreaker;
 
+import gg.kitpvp.cheatbreaker.channels.PluginMessagingListeners;
 import gg.kitpvp.cheatbreaker.configuration.SettingsFile;
 import gg.kitpvp.cheatbreaker.listeners.PacketListener;
+import gg.kitpvp.cheatbreaker.listeners.PlayerListener;
 
 import java.io.File;
 import java.net.InetSocketAddress;
@@ -26,7 +28,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class CheatBreakerAPI extends JavaPlugin {
 
 	/* Singleton instance getter */
-	@Getter private CheatBreakerAPI instance;
+	@Getter private static CheatBreakerAPI instance;
 	
 	@Getter private SettingsFile settings; //Lazy and edgy af
 	
@@ -44,8 +46,12 @@ public class CheatBreakerAPI extends JavaPlugin {
         this.versions = new ConcurrentHashMap<InetSocketAddress, Integer>();
         this.settings = new SettingsFile(this);
         if(settings.isEnabled()) {
+        	getServer().getPluginManager().registerEvents(new PlayerListener(this), this);
         	getServer().getPluginManager().registerEvents(new PacketListener(this), this);
-		getServer().getPluginManager().registerEvents(new PlayerListener(this), this);
+        	if(settings.isChannels()) {
+        		getServer().getMessenger().registerIncomingPluginChannel(this, "CB|INIT", new PluginMessagingListeners(this));
+        		getServer().getMessenger().registerIncomingPluginChannel(this, "CB-Binary", new PluginMessagingListeners(this));
+        	}
         }
     }
     
